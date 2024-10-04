@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactar con el servicio al cliente</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo-netflix.jpg" alt="Logo de Netflix" class="logo">
+        <div class="nav">
+            <a href="https://about.netflix.com/es/new-to-watch">Estrenos</a>
+            <a href="https://about.netflix.com/es/impact">Impacto</a>
+            <a href="https://www.netflix.com/tudum/top10/es">Las 10 más populares</a>
+            <a href="https://about.netflix.com/es/leadership">Liderazgo</a>
+            <a href="https://media.netflix.com/es/">Sala de prensa</a>
+            <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Inversiones</a>
+            <a href="https://about.netflix.com/es/newsroom">Prensa</a>
+            <a href="https://jobs.netflix.com/">Empleo</a>
+            <a href="https://about.netflix.com/es/company-assets">Recursos</a>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <a href="principal.html" class="back-link">&lt; Volver a la página de inicio de Ayuda</a>
+            <h1>Contactar con el Servicio al cliente</h1>
+        </header>
+
+        <main>
+            <section class="app-contact">
+                <h2>Contactanos desde la aplicación de Netflix</h2>
+                <p>¡Ahora, ponerte en contacto con Netflix es más fácil que nunca si lo haces desde la aplicación de Netflix en tu teléfono o tableta Android o iOS! Los correos a través de la aplicación son gratuitos; lo único que necesitas es una conexión a Internet o móvil.</p>
+                <p>Descarga la aplicación de Netflix:</p>
+                <div class="app-links">
+                    <a href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=es" class="app-store">Google Play</a>
+                    <a href="https://apps.apple.com/mx/app/netflix/id363590051" class="app-store">App Store</a>
+                </div>
+                <p>¿Preguntas? <a href="https://help.netflix.com/es/node/33335" class="contact-link">¡Descubre cómo ponerte en contacto con nosotros desde la aplicación de Netflix!</a></p>
+            </section>
+
+            <section class="phone-contact">
+                <h2>Contactanos directamente desde correo electrónico</h2>
+                <p>Estamos para escuchar tus dudas o sugerencias.</p>
+                <a href="mailto: info@account.netflix.com" class="call-button">Enviar correo</a>
+            </section>
+
+            <section class="feedback-form">
+                <h2>Quejas y sugerencias</h2>
+                <form id="form" action="#" method="post" onsubmit="return handleSubmit(event);">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="response-message" style="display: none; margin-top: 10px; color: green;">¡Gracias! Tu comentario ha sido enviado exitosamente.</div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Evita el envío real del formulario
+            document.getElementById('response-message').style.display = 'block'; // Muestra el mensaje de respuesta
+            document.getElementById('form').reset(); // Limpia el formulario
+        }
+    </script>
+</body>
+</html>
