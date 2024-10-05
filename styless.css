@@ -1,8 +1,8 @@
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #000000;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin-right: 20px;
     font-size: 14px; /* Tamaño de fuente más pequeño */
