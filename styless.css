@@ -27,7 +27,7 @@ body {
 }
 
 .nav a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-right: 20px;
     font-size: 14px; /* Tamaño de fuente más pequeño */
@@ -77,8 +77,7 @@ h1 {
 
 h2 {
     font-size: 20px;
-    margin-top: 0;
-    color: #333;
+    margin-top: 0;    color: #333;
 }
 
 .app-links {
